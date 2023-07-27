@@ -15,6 +15,7 @@ const bcgColorValue = document.querySelector('.color');
 buttonEl.addEventListener('click', handleClick);
 
 function handleClick(event) {
-  bodyEl.style.backgroundColor = getRandomHexColor();
-  bcgColorValue.textContent = bodyEl.style.backgroundColor;
+  const randomColor = getRandomHexColor();
+  bodyEl.style.backgroundColor = randomColor;
+  bcgColorValue.textContent = `Hex: ${randomColor}, RGB: ${bodyEl.style.backgroundColor}`;
 }
