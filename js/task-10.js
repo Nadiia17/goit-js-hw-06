@@ -34,7 +34,7 @@ function createBoxes(amount) {
 
 function destroyBoxes() {
   boxesContainer.innerHTML = '';
-  inputEl.value = '0';
+  inputEl.value = '';
 }
 
 const inputEl = document.querySelector("#controls input[type='number']");
